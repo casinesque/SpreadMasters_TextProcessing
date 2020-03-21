@@ -6,7 +6,8 @@ try:
                                   password = "marcotest",
                                   host = "127.0.0.1",
                                   port = "5432",
-                                  database = "SpoonRiver[IT]")
+                                 database = "SpoonRiver[IT]")
+
     cur = con.cursor()
     con.autocommit=True
 
