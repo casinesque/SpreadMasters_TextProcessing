@@ -46,6 +46,6 @@ id=1
 for poem in flat_cleaned_list:
     fullStr = ' '.join(poem) #trasforming each sublist in a string to be better saved on db.
     print(fullStr)
-    db_connection.inserisciPoesia(fullStr,id)
+    db_connection.insertPoem(fullStr,id)
     id=id+1
 

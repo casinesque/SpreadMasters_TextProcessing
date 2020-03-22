@@ -26,8 +26,8 @@ try:
 
     cur.execute("CREATE TABLE IF NOT EXISTS POESIA (ID SERIAL, TESTO TEXT NOT NULL);")
 
-    def inserisciPoesia(poesia,id):
-        print("Inizio inserimento:")
+    def insertPoem(poesia,id):
+        print("Start inserting:")
         cur.execute("INSERT INTO poesia (id, testo) VALUES(%s, %s)", (id,poesia))
         con.commit()
         count = cur.rowcount
